@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="hw_label_accel" xd:componentRef="hw_label_accel" xd:initiationInterval="x" xd:clockPeriod="10.000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
+  <xd:arg xd:name="src-&gt;data" xd:originalName="src" xd:direction="in" xd:interfaceRef="src" xd:busTypeRef="axis" xd:arraySize="110592" xd:dataWidth="8"/>
+  <xd:arg xd:name="src-&gt;last" xd:originalName="src" xd:direction="in" xd:interfaceRef="src" xd:busTypeRef="axis" xd:arraySize="110592" xd:dataWidth="1"/>
+  <xd:arg xd:name="dst-&gt;data" xd:originalName="dst" xd:direction="out" xd:interfaceRef="dst" xd:busTypeRef="axis" xd:arraySize="110592" xd:dataWidth="16"/>
+  <xd:arg xd:name="dst-&gt;last" xd:originalName="dst" xd:direction="out" xd:interfaceRef="dst" xd:busTypeRef="axis" xd:arraySize="110592" xd:dataWidth="1"/>
+  <xd:arg xd:name="rows" xd:originalName="rows" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x10" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="cols" xd:originalName="cols" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x18" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:latencyEstimates xd:best-case="undef" xd:worst-case="undef" xd:average-case="undef"/>
+  <xd:resourceEstimates xd:LUT="6590" xd:FF="6208" xd:BRAM="158" xd:DSP="26"/>
+</xd:acceleratorMap>
